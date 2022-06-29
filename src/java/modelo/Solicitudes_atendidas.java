@@ -1,7 +1,7 @@
 
 package modelo;
 
-public class solicitudes_atendidas {
+public class Solicitudes_atendidas {
     private int idsolicitudes_atendidas;
     private int idenfermeros;
     private String fecha_atencion;
@@ -10,7 +10,7 @@ public class solicitudes_atendidas {
     private int idservicios;
     private int idpacientes;
 
-    public solicitudes_atendidas(int idsolicitudes_atendidas, int idenfermeros, String fecha_atencion, int estado, int idsolicitudes, int idservicios, int idpacientes) {
+    public Solicitudes_atendidas(int idsolicitudes_atendidas, int idenfermeros, String fecha_atencion, int estado, int idsolicitudes, int idservicios, int idpacientes) {
         this.idsolicitudes_atendidas = idsolicitudes_atendidas;
         this.idenfermeros = idenfermeros;
         this.fecha_atencion = fecha_atencion;
@@ -20,7 +20,7 @@ public class solicitudes_atendidas {
         this.idpacientes = idpacientes;
     }
 
-    public solicitudes_atendidas() {
+    public Solicitudes_atendidas() {
     }
 
     public int getIdsolicitudes_atendidas() {
