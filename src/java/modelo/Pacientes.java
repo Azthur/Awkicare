@@ -1,8 +1,13 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package modelo;
 
 /**
  *
- * @author rdro2
+ * @author Alfredo
  */
 public class Pacientes {
     private int idpacientes;
@@ -12,13 +17,13 @@ public class Pacientes {
     private int dni;
     private String genero;
     private String direccion;
-    private int ubigeo;
+    private String ubigeo;
     private String correo;
     private String telefono;
     private String nacimiento;
     private int estado;
 
-    public Pacientes(int idpacientes, int idusuarios, String nombres, String apellidos, int dni, String genero, String direccion, int ubigeo, String correo, String telefono, String nacimiento, int estado) {
+    public Pacientes(int idpacientes, int idusuarios, String nombres, String apellidos, int dni, String genero, String direccion, String ubigeo, String correo, String telefono, String nacimiento, int estado) {
         this.idpacientes = idpacientes;
         this.idusuarios = idusuarios;
         this.nombres = nombres;
@@ -33,7 +38,7 @@ public class Pacientes {
         this.estado = estado;
     }
     
-       public Pacientes(String nombres, String apellidos, int dni, String genero, String direccion, int ubigeo, String correo, String telefono, String nacimiento) {
+    public Pacientes(String nombres, String apellidos, int dni, String genero, String direccion, String ubigeo, String correo, String telefono, String nacimiento) {
     
         this.nombres = nombres;
         this.apellidos = apellidos;
@@ -44,15 +49,15 @@ public class Pacientes {
         this.correo = correo;
         this.telefono = telefono;
         this.nacimiento = nacimiento;
-        }
+    }
     
-    public Pacientes(int idenfermeros, String direccion, int ubigeo, String correo, String telefonop) {
+    public Pacientes(int idpacientes, String direccion, String ubigeo, String correo, String telefono) {
         this.idpacientes = idpacientes;
         this.direccion = direccion;
         this.ubigeo = ubigeo;
         this.correo = correo;
         this.telefono = telefono;
-        }
+    }
 
     public Pacientes() {
     }
@@ -115,11 +120,11 @@ public class Pacientes {
         this.direccion = direccion;
     }
 
-    public int getUbigeo() {
+    public String getUbigeo() {
         return ubigeo;
     }
 
-    public void setUbigeo(int ubigeo) {
+    public void setUbigeo(String ubigeo) {
         this.ubigeo = ubigeo;
     }
 

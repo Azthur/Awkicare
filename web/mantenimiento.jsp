@@ -380,7 +380,7 @@
                               <div class="table-responsive">
                                 <ul>
                                   <li><a href="ControlEnfermeros?accion=listarEnfermeros">Enfermeros</a></li>
-                                  <li><a href="#">Pacientes</a></li>
+                                  <li><a href="ControlPacientes?accion=listarPacientes">Pacientes</a></li>
                                   <li><a href="#">Usuarios</a></li>
                                 </ul>
                               </div>

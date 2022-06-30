@@ -3,7 +3,7 @@
     Created on : 29/06/2022, 11:05:40 PM
     Author     : rdro2
 --%>
-
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -31,7 +31,7 @@
                     <td></td>
                     <td>
                         <a href="ControlPacientes?accion=eliminar&idpacientes=${x.getIdpacientes()}">Eliminar</a>
-                        <a href="ControlPacientess?accion=modificar&idpacientes=${x.getIdpacientes()}">Modificar</a>
+                        <a href="ControlPacientes?accion=modificar&idpacientes=${x.getIdpacientes()}">Modificar</a>
                     </td>
                 </tr>
             </c:forEach>
