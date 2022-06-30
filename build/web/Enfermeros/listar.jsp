@@ -482,7 +482,7 @@
           extend: 'excelHtml5',
           text:      'Excel <i class="far fa-file-excel"></i>',
           titleAttr: 'Exportar a Excel',
-          title:  'Registros de visitas-2022-06-30-123609',
+          title:  'Enfermeros',
           exportOptions: {
               columns: [0,1,2,3,4,5,6],
           },
@@ -492,7 +492,7 @@
           extend: 'pdfHtml5',
           text:      'PDF <i class="far fa-file-pdf"></i>',
           titleAttr: 'Exportar a PDF',
-          title:  'Registros de visitas-2022-06-30-123609',
+          title:  'Enfermeros',
           orientation: 'portrait',
           pageSize: 'A4',
           exportOptions: {
