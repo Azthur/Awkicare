@@ -16,11 +16,11 @@ public class PagosDAO implements PagosInterface{
     Connection con;
     PreparedStatement ps;
     ResultSet rs;
-    Pagos p;
+    Pagos pg;
     ArrayList<Pagos>lista = new ArrayList<>();
 
     @Override
-    public boolean agregar(Pagos e) {
+    public boolean agregar(Pagos pg) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
@@ -30,7 +30,7 @@ public class PagosDAO implements PagosInterface{
     }
 
     @Override
-    public boolean editar(Pagos e) {
+    public boolean editar(Pagos pg) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
@@ -43,4 +43,6 @@ public class PagosDAO implements PagosInterface{
     public Pagos listarUno(int idpagos) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+
+    
 }
