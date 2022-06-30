@@ -14,6 +14,11 @@
         <h1>Mantenimiento de Enfermeros</h1>
         <a href="ControlEnfermeros?accion=agregarEnfermero">Ingresar enfermero</a><br>
         <a href="ControlEnfermeros?accion=listarEnfermeros">Listar enfermeros</a><br>
+        <br>
+         <h1>Mantenimiento de Pacientes</h1>
+        <a href="ControlPacientes?accion=agregarPaciente">Ingresar paciente</a><br>
+        <a href="ControlPacientes?accion=listarPacientes">Listar paciente</a><br>
+        
         
     </body>
 </html>

@@ -36,8 +36,8 @@ public class PacientesDAO implements PacientesInterface{
             ps.setString(8, pa.getTelefono());
             ps.setString(9, pa.getNacimiento());
             ps.executeUpdate();
-        } catch (SQLException ex) {
-            Logger.getLogger(PacientesDAO.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (SQLException pax) {
+            Logger.getLogger(PacientesDAO.class.getName()).log(Level.SEVERE, null, pax);
         }        
         return false;
     }
@@ -49,8 +49,8 @@ public class PacientesDAO implements PacientesInterface{
             con = cn.getConexion();
             ps = con.prepareStatement(sql);
             ps.executeUpdate();
-        } catch (SQLException ex) {
-            Logger.getLogger(PacientesDAO.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (SQLException pax) {
+            Logger.getLogger(PacientesDAO.class.getName()).log(Level.SEVERE, null, pax);
         }        
         return false;
     }
@@ -67,8 +67,8 @@ public class PacientesDAO implements PacientesInterface{
             ps.setString(4, pa.getTelefono());
             
             ps.executeUpdate();
-        } catch (SQLException ex) {
-            Logger.getLogger(PacientesDAO.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (SQLException pax) {
+            Logger.getLogger(PacientesDAO.class.getName()).log(Level.SEVERE, null, pax);
         }        
         return false;
     }
@@ -96,8 +96,8 @@ public class PacientesDAO implements PacientesInterface{
                 pa.setEstado(rs.getInt("estado"));
                 lista.add(pa);              
             }
-        } catch (SQLException ex) {
-            Logger.getLogger(PacientesDAO.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (SQLException pax) {
+            Logger.getLogger(PacientesDAO.class.getName()).log(Level.SEVERE, null, pax);
         }        
         return lista;
     }
@@ -124,8 +124,8 @@ public class PacientesDAO implements PacientesInterface{
                 pa.setNacimiento(rs.getString("nacimiento"));
                 pa.setEstado(rs.getInt("estado"));
             }
-        } catch (SQLException ex) {
-            Logger.getLogger(PacientesDAO.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (SQLException pax) {
+            Logger.getLogger(PacientesDAO.class.getName()).log(Level.SEVERE, null, pax);
         }        
         return pa;
     }

@@ -32,10 +32,33 @@ public class Pacientes {
         this.nacimiento = nacimiento;
         this.estado = estado;
     }
+    
+       public Pacientes(String nombres, String apellidos, int dni, String genero, String direccion, int ubigeo, String correo, String telefono, String nacimiento) {
+    
+        this.nombres = nombres;
+        this.apellidos = apellidos;
+        this.dni = dni;
+        this.genero = genero;
+        this.direccion = direccion;
+        this.ubigeo = ubigeo;
+        this.correo = correo;
+        this.telefono = telefono;
+        this.nacimiento = nacimiento;
+        }
+    
+    public Pacientes(int idenfermeros, String direccion, int ubigeo, String correo, String telefonop) {
+        this.idpacientes = idpacientes;
+        this.direccion = direccion;
+        this.ubigeo = ubigeo;
+        this.correo = correo;
+        this.telefono = telefono;
+        }
 
     public Pacientes() {
     }
 
+    
+    
     public int getIdpacientes() {
         return idpacientes;
     }
