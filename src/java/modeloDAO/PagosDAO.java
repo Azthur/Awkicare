@@ -26,7 +26,7 @@ public class PagosDAO implements PagosInterface{
     }
 
     @Override
-    public boolean eliminar(String idpagos) {
+    public boolean eliminar(int idpagos) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 

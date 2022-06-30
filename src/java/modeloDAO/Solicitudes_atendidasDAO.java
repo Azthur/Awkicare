@@ -25,7 +25,7 @@ public class Solicitudes_atendidasDAO implements Solicitudes_atendidasInterface{
     }
 
     @Override
-    public boolean eliminar(String idsolicitudes_atendidas) {
+    public boolean eliminar(int idsolicitudes_atendidas) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
