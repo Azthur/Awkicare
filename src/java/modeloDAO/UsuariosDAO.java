@@ -8,41 +8,39 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import misInterfaces.PagosInterface;
-import modelo.Pagos;
+import misInterfaces.UsuariosInterface;
+import modelo.Usuarios;
 
-public class PagosDAO implements PagosInterface{
+public class UsuariosDAO implements UsuariosInterface{
     Conexion cn = new Conexion();
     Connection con;
     PreparedStatement ps;
     ResultSet rs;
-    Pagos pg;
-    ArrayList<Pagos>lista = new ArrayList<>();
+    Usuarios u;
+    ArrayList<Usuarios>lista = new ArrayList<>();
 
     @Override
-    public boolean agregar(Pagos pg) {
+    public boolean agregar(Usuarios u) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public boolean eliminar(int idpagos) {
+    public boolean eliminar(int idusuarios) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public boolean editar(Pagos pg) {
+    public boolean editar(Usuarios u) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public ArrayList<Pagos> listarTodos() {
+    public ArrayList<Usuarios> listarTodos() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public Pagos listarUno(int idpagos) {
+    public Usuarios listarUno(int idusuarios) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-
-    
 }

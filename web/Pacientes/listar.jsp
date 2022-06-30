@@ -12,6 +12,29 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <h1>Lista de Pacientes</h1>
+        <table border="1">
+            <tr>
+                <th>Nombres</th>
+                <th>Apellidos</th>
+                <th>Dni</th>
+                <th>Genero</th>
+                <th>Estado</th>
+                <th>Acciones</th>
+            </tr>
+            <c:forEach var="x" items="${lis}">
+                <tr>
+                    <td>${x.getNombres()}</td>
+                    <td>${x.getApellidos()}</td>
+                    <td>${x.getDni()}</td>
+                    <td>${x.getGenero()}</td>
+                    <td></td>
+                    <td>
+                        <a href="ControlPacientes?accion=eliminar&idpacientes=${x.getIdpacientes()}">Eliminar</a>
+                        <a href="ControlPacientess?accion=modificar&idpacientes=${x.getIdpacientes()}">Modificar</a>
+                    </td>
+                </tr>
+            </c:forEach>
+        </table>
     </body>
 </html>

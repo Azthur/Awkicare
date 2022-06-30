@@ -8,41 +8,39 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import misInterfaces.PagosInterface;
-import modelo.Pagos;
+import misInterfaces.CalificacionesInterface;
+import modelo.Calificaciones;
 
-public class PagosDAO implements PagosInterface{
+public class CalificacionesDAO implements CalificacionesInterface{
     Conexion cn = new Conexion();
     Connection con;
     PreparedStatement ps;
     ResultSet rs;
-    Pagos pg;
-    ArrayList<Pagos>lista = new ArrayList<>();
+    Calificaciones ca;
+    ArrayList<Calificaciones>lista = new ArrayList<>();
 
     @Override
-    public boolean agregar(Pagos pg) {
+    public boolean agregar(Calificaciones ca) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public boolean eliminar(int idpagos) {
+    public boolean eliminar(int idcalificaciones) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public boolean editar(Pagos pg) {
+    public boolean editar(Calificaciones ca) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public ArrayList<Pagos> listarTodos() {
+    public ArrayList<Calificaciones> listarTodos() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public Pagos listarUno(int idpagos) {
+    public Calificaciones listarUno(int idcalificaciones) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-
-    
 }
