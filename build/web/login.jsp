@@ -189,7 +189,7 @@
         </script>
     </head>
     <body>
-        <form class="login-form" method="POST" action="">
+        <form class="login-form" method="POST" action="mantenimiento.jsp">
           <p class="login-text">
             <span class="fa-stack fa-lg">
               <i class="fa fa-circle fa-stack-2x"></i>
