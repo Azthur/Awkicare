@@ -44,7 +44,7 @@ public class EnfermerosDAO implements EnfermerosInterface{
     }
 
     @Override
-    public boolean eliminar(String idenfermeros) {
+    public boolean eliminar(int idenfermeros) {
         try {
             String sql = "delete from enfermeros where idenfermeros="+idenfermeros;
             con = cn.getConexion();
@@ -130,9 +130,5 @@ public class EnfermerosDAO implements EnfermerosInterface{
             Logger.getLogger(EnfermerosDAO.class.getName()).log(Level.SEVERE, null, ex);
         }        
         return e;
-    }
-
-    public void eliminar(int idenfermeros) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }

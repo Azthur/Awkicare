@@ -12,16 +12,20 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Agregar paciente</h1>
-        <form action="ControlPaciente" method="post">
-            <label>Codigo</label>
-            <input type="text" name="codigo"><br>
-            <label>Nombre</label>
-            <input type="text" name="nombre"><br>
-            <label>Apellido</label>
-            <input type="text" name="apellido"><br>
-            <label>Edad</label>
-            <input type="text" name="edad"><br>
+        <h1>Agregar Enfermeros</h1>
+        <form action="ControlEnfermeros" method="post">
+            <label>Nombres</label>
+            <input type="text" name="nombres"><br>
+            <label>Apellidos</label>
+            <input type="text" name="apellidos"><br>
+            <label>DNI</label>
+            <input type="number" name="dni"><br>
+            <label>Genero</label>
+            <select name="genero">
+                <option value="M">Masculino</option>
+                <option value="F">Femenino</option>
+            </select>
+            
             <input type="hidden" name="accion" value="agregarRegistro">
             <input type="submit" value="Aceptar">
         </form>
