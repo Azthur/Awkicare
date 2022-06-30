@@ -22,20 +22,20 @@ public class EnfermerosDAO implements EnfermerosInterface{
     @Override
     public boolean agregar(Enfermeros e) {        
         try {
-            String sql = "insert into enfermeros values(null, ?,?,?,?,?,?,?,?,?,?,?,'1')";
+            String sql = "insert into enfermeros values(null,'1',?,?,?,?,?,?,?,?,?,?,'1')";
             con = cn.getConexion();
             ps = con.prepareStatement(sql);
-            ps.setInt(1, e.getIdusuarios());
-            ps.setString(2, e.getNombres());
-            ps.setString(3, e.getApellidos());
-            ps.setInt(4, e.getDni());
-            ps.setString(5, e.getGenero());
-            ps.setString(6, e.getDireccion());
-            ps.setString(7, e.getUbigeo());
-            ps.setString(8, e.getCorreo());
-            ps.setString(9, e.getTelefono());
-            ps.setString(10, e.getNacimiento());
-            ps.setString(11, e.getCodigo_cep());
+            
+            ps.setString(1, e.getNombres());
+            ps.setString(2, e.getApellidos());
+            ps.setInt(3, e.getDni());
+            ps.setString(4, e.getGenero());
+            ps.setString(5, e.getDireccion());
+            ps.setString(6, e.getUbigeo());
+            ps.setString(7, e.getCorreo());
+            ps.setString(8, e.getTelefono());
+            ps.setString(9, e.getNacimiento());
+            ps.setString(10, e.getCodigo_cep());
             ps.executeUpdate();
         } catch (SQLException ex) {
             Logger.getLogger(EnfermerosDAO.class.getName()).log(Level.SEVERE, null, ex);

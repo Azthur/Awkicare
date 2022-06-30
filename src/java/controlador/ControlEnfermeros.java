@@ -28,8 +28,7 @@ public class ControlEnfermeros extends HttpServlet {
             pagina = "Enfermeros/agregar.jsp";
         }
         else if(valor.equalsIgnoreCase("agregarRegistro")){
-            int idenfermeros = Integer.parseInt(request.getParameter("idenfermeros"));
-            int idusuarios = Integer.parseInt(request.getParameter("idusuarios"));
+            
             String nombres = request.getParameter("nombres");
             String apellidos = request.getParameter("apellidos");
             int dni = Integer.parseInt(request.getParameter("dni"));
@@ -40,8 +39,8 @@ public class ControlEnfermeros extends HttpServlet {
             String telefono = request.getParameter("telefono");
             String nacimiento = request.getParameter("nacimiento");
             String codigo_cep = request.getParameter("codigo_cep");
-            int estado = Integer.parseInt(request.getParameter("estado"));
-            e = new Enfermeros(idenfermeros, idusuarios, nombres, apellidos, dni, genero, direccion, ubigeo, correo, telefono, nacimiento, codigo_cep, estado);
+            
+            e = new Enfermeros(nombres, apellidos, dni, genero, direccion, ubigeo, correo, telefono, nacimiento, codigo_cep);
             ed.agregar(e);
             lista=ed.listarTodos();
             request.setAttribute("lis", lista);
