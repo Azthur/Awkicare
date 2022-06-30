@@ -67,19 +67,13 @@ public class ControlEnfermeros extends HttpServlet {
         }
         else if(valor.equalsIgnoreCase("modificarEnfermero")){
             int idenfermeros = Integer.parseInt(request.getParameter("idenfermeros"));
-            int idusuarios = Integer.parseInt(request.getParameter("idusuarios"));
-            String nombres = request.getParameter("nombres");
-            String apellidos = request.getParameter("apellidos");
-            int dni = Integer.parseInt(request.getParameter("dni"));
-            String genero = request.getParameter("genero");
             String direccion = request.getParameter("direccion");
             String ubigeo = request.getParameter("ubigeo");
             String correo = request.getParameter("correo");
             String telefono = request.getParameter("telefono");
-            String nacimiento = request.getParameter("nacimiento");
             String codigo_cep = request.getParameter("codigo_cep");
-            int estado = Integer.parseInt(request.getParameter("estado"));
-            e = new Enfermeros(idenfermeros, idusuarios, nombres, apellidos, dni, genero, direccion, ubigeo, correo, telefono, nacimiento, codigo_cep, estado);
+            
+            e = new Enfermeros(idenfermeros, direccion, ubigeo, correo, telefono, codigo_cep);
             ed.editar(e);
             lista=ed.listarTodos();
             request.setAttribute("lis", lista);

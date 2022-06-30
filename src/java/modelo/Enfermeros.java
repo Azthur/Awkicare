@@ -53,10 +53,20 @@ public class Enfermeros {
         this.nacimiento = nacimiento;
         this.codigo_cep = codigo_cep;
     }
+    
+    public Enfermeros(int idenfermeros, String direccion, String ubigeo, String correo, String telefono, String codigo_cep) {
+        this.idenfermeros = idenfermeros;
+        this.direccion = direccion;
+        this.ubigeo = ubigeo;
+        this.correo = correo;
+        this.telefono = telefono;
+        this.codigo_cep = codigo_cep;
+    }
 
     public Enfermeros() {
     }
 
+    
     
     public int getIdenfermeros() {
         return idenfermeros;

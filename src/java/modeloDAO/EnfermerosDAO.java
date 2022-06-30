@@ -66,6 +66,7 @@ public class EnfermerosDAO implements EnfermerosInterface{
             ps.setString(2, e.getUbigeo());
             ps.setString(3, e.getCorreo());
             ps.setString(4, e.getTelefono());
+            
             ps.executeUpdate();
         } catch (SQLException ex) {
             Logger.getLogger(EnfermerosDAO.class.getName()).log(Level.SEVERE, null, ex);
