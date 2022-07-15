@@ -24,6 +24,8 @@ public class ControlEnfermeros extends HttpServlet {
         EnfermerosDAO ed = new EnfermerosDAO();
         ArrayList<Enfermeros>lista;
         
+//Hola mundo
+
         if(valor.equalsIgnoreCase("agregarEnfermero")){
             pagina = "Enfermeros/agregar.jsp";
         }
