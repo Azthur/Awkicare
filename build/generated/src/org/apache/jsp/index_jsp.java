@@ -50,14 +50,8 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        <title>JSP Page</title>\r\n");
       out.write("    </head>\r\n");
       out.write("    <body>\r\n");
-      out.write("        <h1>Mantenimiento de Enfermeros</h1>\r\n");
-      out.write("        <a href=\"ControlEnfermeros?accion=agregarEnfermero\">Ingresar enfermero</a><br>\r\n");
-      out.write("        <a href=\"ControlEnfermeros?accion=listarEnfermeros\">Listar enfermeros</a><br>\r\n");
-      out.write("        <br>\r\n");
-      out.write("         <h1>Mantenimiento de Pacientes</h1>\r\n");
-      out.write("        <a href=\"ControlPacientes?accion=agregarPaciente\">Ingresar paciente</a><br>\r\n");
-      out.write("        <a href=\"ControlPacientes?accion=listarPacientes\">Listar paciente</a><br>\r\n");
-      out.write("        \r\n");
+      out.write("        <h1>Mantenimiento</h1>\r\n");
+      out.write("        <a href=\"mantenimiento.jsp\">Ir a Mantenimiento</a>\r\n");
       out.write("        \r\n");
       out.write("    </body>\r\n");
       out.write("</html>\r\n");
